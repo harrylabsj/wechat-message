@@ -1,35 +1,22 @@
-# wechat-message
+---
+name: wechat-message
+description: Send and manage WeChat messages via wacli, including sending messages to contacts or groups, searching chat history, listing recent conversations, and syncing message context when supported. Use when the user asks to 发微信、给微信联系人发消息、搜索微信聊天记录、查看最近微信会话, or wants operational help using WeChat messaging through the available CLI workflow.
+---
 
-Send and manage WeChat messages via wacli CLI. Supports sending messages to contacts/groups, searching chat history, and syncing conversations.
+# WeChat Message
 
-## Usage
+## Overview
 
-Send a message to a contact or group:
-```
-Send "Hello" to [contact_name] on WeChat
-```
+Use this skill to help the user send or inspect WeChat messages through the supported CLI workflow.
 
-Search chat history:
-```
-Search WeChat messages containing "keyword"
-```
+## Workflow
 
-List recent chats:
-```
-List my WeChat conversations
-```
-
-## Requirements
-
-- `wacli` CLI tool installed and configured
-- WeChat account authenticated with wacli
-
-## Configuration
-
-No additional configuration required. The skill uses the system's wacli installation.
-
-## Notes
-
-- Contact names are matched using wacli's fuzzy search
-- For group chats, use the group name as the contact name
-- Message history search requires wacli sync to be run periodically
+1. Determine the intended action:
+   - send a message
+   - search chat history
+   - list recent chats
+   - sync or inspect conversations
+2. Identify the target contact or group when sending.
+3. Confirm message content when needed.
+4. Keep outputs concise and action-oriented.
+5. Do not claim success unless the underlying command or tool confirms it.
