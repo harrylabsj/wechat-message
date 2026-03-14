@@ -1,5 +1,5 @@
 ---
-name: wechat-message
+name: wechat-message-cli
 description: Send and manage WeChat messages via wacli, including sending messages to contacts or groups, searching chat history, listing recent conversations, and syncing message context when supported. Use when the user asks to 发微信、给微信联系人发消息、搜索微信聊天记录、查看最近微信会话, or wants operational help using WeChat messaging through the available CLI workflow.
 ---
 
